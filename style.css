@@ -116,6 +116,9 @@ h3{
         opacity:1;
     }
 }
+.start div {
+    padding: 20px;
+}
 .start {
     position: fixed;
     width: 100%;
@@ -129,4 +132,42 @@ h3{
 .result span {
     background: #379d60;
     padding: 0 10px;
+}
+
+@media screen and (max-height:660px) {
+    .play_board {
+        top: 56%;
+    }
+}
+@media screen and (max-height:600px) {
+    .play_board {
+        top: 56%;
+    }
+    .play_board {
+        top: unset;
+        bottom: 30px;
+        transform: translate(-50%, 0);
+    }
+}
+@media screen and (max-width:500px){
+    .player {
+        top: 22%;
+    }
+    .play_board {
+        box-sizing: border-box;
+        max-width: 200px;
+        max-height: 200px;
+        padding: 10px;
+    }
+    .box * {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:400px){
+    .player {
+        top: 26%;
+    }
+    .start~h1 {
+        font-size: 24px;
+    }
 }
